@@ -1,7 +1,5 @@
-# Identity-Card-Authenticator
+# Identity-Card-Authenticator | 身份证验证系统
 基于Python GUI的身份证验证系统，支持身份证有效性验证、信息提取和行政区划查询功能。
-
-# 身份证验证系统
 
 [![Python Version](https://img.shields.io/badge/python-3.7%2B-blue.svg)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
