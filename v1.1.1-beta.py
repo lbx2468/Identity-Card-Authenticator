@@ -1,4 +1,4 @@
-# 优化出生日期格式为"1970年1月1日"（去除前导零）
+# 优化代码注释，增加可读性
 
 import tkinter as tk  # 导入GUI库
 from tkinter import messagebox  # 导入消息框模块
@@ -80,7 +80,7 @@ def find_region_info(region_code):
         # 1. 获取当前脚本所在目录的绝对路径
         script_dir = os.path.dirname(os.path.abspath(__file__))
         # 2. 构建Excel文件的完整路径
-        excel_path = os.path.join(script_dir, 'sum.xlsx')
+        excel_path = os.path.join(script_dir, 'idCode.xlsx')
 
         # 3. 从Excel文件读取数据
         df = pd.read_excel(excel_path)
