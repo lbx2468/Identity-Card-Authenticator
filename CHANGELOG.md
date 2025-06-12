@@ -63,7 +63,7 @@
 
 ## v1.1.2-beta - 数据存储优化
 - 移除 Excel 文件依赖
-- 创建 data.py 存储行政区划数据
+- 创建 idCode.py 存储行政区划数据
 - 简化查找函数，直接读取内存数据
 - 移除 pandas 依赖
 
@@ -78,7 +78,7 @@
 - **添加绝对路径支持**：确保能找到 Excel 文件
   ```python
   script_dir = os.path.dirname(os.path.abspath(__file__))
-  excel_path = os.path.join(script_dir, 'sum.xlsx')
+  excel_path = os.path.join(script_dir, 'idCode.xlsx')
   df = pd.read_excel(excel_path)
   ```
 - **处理数据类型**：将行政区划代码转换为字符串并去除空格
