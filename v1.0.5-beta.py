@@ -67,7 +67,7 @@ def find_region_info(region_code):
         df = pd.DataFrame(data)
 
         # 在实际应用中，使用以下代码读取Excel文件
-        # df = pd.read_excel('sum.xlsx')
+        # df = pd.read_excel('idCode.xlsx')
 
         # 查找匹配的行政区划代码
         match = df[df['行政区划代码'] == region_code]
