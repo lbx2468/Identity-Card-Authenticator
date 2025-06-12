@@ -1,8 +1,8 @@
-# 为验证按钮添加鼠标悬停高光效果
+# 移除Excel依赖，使用idCode.py存储数据，简化查找函数
 
 import tkinter as tk
 from tkinter import messagebox
-from idCode import region_data  # 从data.py导入行政区划数据
+from idCode import region_data  # 从idCode.py导入行政区划数据
 
 """
 身份证验证函数
