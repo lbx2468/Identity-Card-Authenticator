@@ -4,8 +4,6 @@
 [![Python Version](https://img.shields.io/badge/python-3.7%2B-blue.svg)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-基于Python GUI的身份证验证系统，支持身份证有效性验证、信息提取和行政区划查询功能。
-
 ## 功能特点
 
 - ✅ 身份证有效性验证（符合GB 11643-1999标准）
@@ -22,11 +20,11 @@
 ```
 身份证信息验证系统
 
-身份证号码：110101000101010011    验证
+身份证号码：11010119700101931X    验证
 
 身份证信息
 性　　别    男
-出　　生    1 年 1 月 1 日
+出　　生    1970 年 1 月 1 日
 省　　级    北京市
 地 市 级    市辖区
 县 区 级    东城区
