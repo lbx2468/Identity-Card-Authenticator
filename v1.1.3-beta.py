@@ -1,8 +1,8 @@
-# 优化代码注释，增加可读性
+# 优化出生日期格式为"1970年1月1日"（去除前导零）
 
 import tkinter as tk
 from tkinter import messagebox
-from idCode import region_data  # 从data.py导入行政区划数据
+from idCode import region_data  # 从idCode.py导入行政区划数据
 
 """
 身份证验证函数
