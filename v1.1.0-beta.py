@@ -1,4 +1,4 @@
-# 移除Excel依赖，使用data.py存储数据，简化查找函数
+# 修复了 Excel 文件读取问题，使用Excel存储数据
 
 import tkinter as tk
 from tkinter import messagebox
@@ -54,7 +54,7 @@ def find_region_info(region_code):
     try:
         # 获取当前脚本所在目录
         script_dir = os.path.dirname(os.path.abspath(__file__))
-        excel_path = os.path.join(script_dir, 'sum.xlsx')
+        excel_path = os.path.join(script_dir, 'idCode.xlsx')
 
         # 读取Excel文件
         df = pd.read_excel(excel_path)
