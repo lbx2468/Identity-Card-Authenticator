@@ -65,11 +65,11 @@ class IDValidatorApp:
         # 信息项和对应的标签
         self.info_labels = {}
         items = [
-            ("性别", "gender"),
-            ("出生", "birth"),
-            ("省级", "province"),
-            ("地市级", "city"),
-            ("县区级", "district"),
+            ("性　　别", "gender"),
+            ("出　　生", "birth"),
+            ("省　　级", "province"),
+            ("地 市 级", "city"),
+            ("县 区 级", "district"),
             ("数据来源", "source")
         ]
 
@@ -102,15 +102,10 @@ class IDValidatorApp:
         for label in self.info_labels.values():
             label.config(text="")
 
-        # 基本格式检查
+        # 基本格式检查+验证校验码
         if not (len(id_num) == 18 and id_num[:17].isdigit() and
-                id_num[-1] in "0123456789X"):
+                id_num[-1] in "0123456789X") or not self.check_verify_code(id_num):
             messagebox.showerror("错误", "身份证格式错误")
-            return
-
-        # 验证校验码
-        if not self.check_verify_code(id_num):
-            messagebox.showerror("错误", "身份证校验码错误")
             return
 
         # 提取并显示信息
@@ -137,7 +132,7 @@ class IDValidatorApp:
         # 行政区划信息
         region_code = id_num[:6]
         province, city, district, source = region_data.get(
-            region_code, ("未知", "未知", "未知", "未知"))
+            region_code, ("-", "-", "-", "-"))
 
         self.info_labels["province"].config(text=province)
         self.info_labels["city"].config(text=city)
