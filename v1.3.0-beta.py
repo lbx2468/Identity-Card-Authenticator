@@ -2,7 +2,7 @@
 
 import tkinter as tk
 from tkinter import messagebox
-from idCode import region_data  # 从data.py导入行政区划数据
+from idCode import region_data  # 从idCode.py导入行政区划数据
 
 
 class IDValidatorApp:
