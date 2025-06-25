@@ -59,6 +59,7 @@
 
 ## ChangeLog
 
+**Full Changelog**: https://github.com/lbx2468/Identity-Card-Authenticator/blob/master/CHANGELOG.md
 | 版本 | 主要变更 |
 |-------------|-------------|
 | v1.0.0-beta | 初始实现身份证验证系统 |
